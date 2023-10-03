@@ -1,0 +1,648 @@
+
+.head{
+   position: sticky;
+   position: -webkit-sticky;
+   z-index: 99;
+}
+header{
+    height: 80px;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  
+    
+}
+.accueil{
+    
+    height: 100%;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h2{
+    font-size: 30px;
+}
+.navbar ul li {
+    margin-right: 30px;
+}
+.navbar ul li a{
+    color: #fff;
+    font-size: 25px;
+}
+.accueil{
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+  
+}
+.accueil  div{
+    margin: 0 100px;
+}
+.accueil .my-name{
+    line-height: 30px;
+}
+.accueil .my-name h1{
+    font-size: 60px;
+    margin: 15px 0;
+}
+.accueil .my-name h1 span{
+    color: #da07e0;
+}
+
+.accueil .my-name h3{
+    font-size: 30px;
+    margin: 25px 0;
+}
+.accueil .my-name p{
+    font-size: 25px;
+    margin: 20px 0;
+}
+.accueil .my-name button{
+    background-color: #d932fe;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.accueil .my-photo figure{
+    background-color: #491463;
+    border-radius: 50%;
+    border: 3px solid #d86ce9;
+}
+.accueil .my-photo img{
+    width: 300px;
+    border-radius: 50%;
+    padding: 15px;
+}
+.hamburger{
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 99;
+    display: none;
+}
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before{
+    content: "";
+    display: none;
+    width: 100%;
+    height: 4px;
+    border-radius: 3px;
+    background: #fff;
+    margin: 6px 0;
+    transition: .4s;
+}
+
+.hamburger.active::before{
+    transform: rotate(-45deg) translate(-6px , 6px);
+}
+
+.hamburger.active::after{
+    transform: rotate(45deg)translate(-8px , -8px);
+}
+
+.hamburger.active .bar{
+    opacity: 0;
+}
+.hamburger .line{
+    width: 30px;
+    height: 3px;
+    margin-top: 5px;
+    background-color: #fff;
+}
+/*-----------About -----------*/
+.about{
+    display: flex;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 5% 0 10% 0;
+   padding: 2% 10%;
+   
+}
+.about div{
+    margin: 0 100px;
+}
+.about .photo img{
+    width: 250px;
+    border-radius: 10px;
+}
+.about .about-me h3{
+    font-size: 30px;
+    
+}
+.about .about-me h4{
+    font-size: 25px;
+    margin-top: 10px;
+}
+.about .about-me h4 span{
+    color: #da07e0;
+}
+.about .about-me h5{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.about .about-me p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.list-projet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    color: #fff;
+    margin: 10% auto 10% auto;
+    text-align: center;
+   
+}
+.list-projet  h2{
+    font-size: 30px;
+    text-decoration: underline;
+    margin: 5% 0 1% 0;
+}
+
+.my-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 20px;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.my-project .projet{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    width: 300px;
+    height: 350px;
+    padding: 10px; 
+    border-radius: 20px;
+    margin: 20px 30px;
+    border: 1px solid #fff;
+    
+}
+.my-project .photo-projet img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+   
+}
+.projet .description-projet {
+    line-height: 23px;
+}
+.projet .description-projet h3{
+    font-size: 20px;
+}
+.projet .description-projet div{
+    margin-top: 10px;
+}
+.projet .description-projet a{
+    background-color: #d932fe;
+    padding: 5px;
+    color: white;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.projet .description-projet a:hover{
+    background-color: #491463;
+    transition: 0.5s;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    border: 1px white solid;
+    width: 40%;
+    padding: 1%;
+    margin: 5% auto 5% auto;
+    border-radius: 10px;
+   
+}
+.contact div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+.contact div i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 50px;
+}
+.contact div i a{
+    color: #fff;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.contact div img{
+    width: 50px;
+    
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    color: #fff;
+    font-size: 20px;
+    margin: 2% 0 0 0;
+}
+@media screen and (max-width: 1320px) {
+    header{
+        padding: 7px;
+    }
+    .navbar ul li a{
+        font-size: 20px;
+    }
+    .logo h2{
+        font-size: 25px;
+    }
+    .accueil .my-photo img{
+        width: 300px;
+    }
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .accueil .my-name h1{
+        font-size: 55px;
+        
+    }
+    .accueil .my-name h1 span{
+        color: #da07e0;
+    }
+    
+    .accueil .my-name h3{
+        font-size: 25px;
+        margin: 15px 0;
+    }
+    .accueil .my-name p{
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .accueil .my-name button{
+        
+        font-size: 18px;
+        
+    }
+}
+@media screen and (max-width: 1200px){
+    .accueil .my-name h1{
+        font-size: 50px;
+        
+    }
+    .accueil .my-name button{
+        font-size: 17px;
+        padding: 7px;
+        
+    }
+    .accueil .my-name p{
+        font-size: 18px;
+        margin: 20px 0;
+    }
+    .accueil  div{
+        margin: 0 90px;
+    }
+    
+    .contact{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 1100px){
+    .accueil .my-name h1{
+        font-size: 40px;
+        
+    }
+    .accueil .my-name button{
+        font-size: 16px;
+        padding: 6px;
+        
+    }
+    .accueil .my-name h3{
+        font-size: 23px;
+        margin: 15px 0;
+    }
+    .accueil .my-name p{
+        font-size: 18px;
+        margin: 20px 0;
+    }
+    .accueil  div{
+        margin: 0 80px;
+    }
+    .about{
+        padding: 0 7%;
+    }
+    .about div{
+        margin: 0 70px;
+    }
+    .about .about-me h3{
+        font-size: 25px;
+        
+    }
+    .about .about-me h4{
+        font-size: 20px;
+       
+    }
+    
+    .about .about-me h5{
+        font-size: 18px;
+       
+    }
+    .about .about-me p{
+        font-size: 16px;
+       
+    }
+    .about .photo img{
+        width: 200px;
+        border-radius: 10px;
+    }
+    .contact{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .accueil .my-name h1{
+        font-size: 35px;
+        
+    }
+    .accueil .my-name button{
+        font-size: 15px;
+        padding: 6px;
+        
+    }
+    .accueil .my-name h3{
+        font-size: 20px;
+        margin: 15px 0;
+    }
+    .accueil .my-name p{
+        font-size: 18px;
+        margin: 20px 0;
+    }
+    .accueil  div{
+        margin: 0 50px;
+    }
+    .about div{
+        margin: 0 70px;
+    }
+    .about .about-me h3{
+        font-size: 20px;
+        
+    }
+    .about .about-me h4{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    .about .about-me h5{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .about .about-me p{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .about{
+        padding: 0 5%;
+    }
+    .contact{
+        width: 55%;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger .bar,
+    .hamburger::after,
+    .hamburger::before{
+        display: block;
+        z-index: 99;
+    }
+    .logo{
+        z-index: 99;
+    }
+    header{
+        justify-content: space-between;
+        padding: 20px;
+        width: 100vw;
+        z-index: 99;
+    }
+    .navbar{
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 0;
+        transition: 0.3s;
+       background: url("../img/back.png");
+      
+       z-index: 1;
+        
+    }
+   
+    .navbar ul li{
+        margin: 15px 0 ;
+    }
+   
+    .accueil .my-photo img{
+        width: 250px;
+       
+    }
+    .navbar ul {
+        display: block;
+        width: fit-content;
+        margin: 40px auto 10px auto;
+        text-align: center;
+        opacity: 0;
+    }
+    .navbar.active{
+        height: 200px;
+    }
+    .navbar.active ul{
+        opacity: 1;
+    }
+    .accueil  div{
+        margin: 0 50px;
+    }
+    .about{
+        padding: 0 2%;
+    }
+    .about .about-me h3{
+        font-size: 18px;
+        
+    }
+    .about .about-me h4{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    
+    .about .about-me h5{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .about .about-me p{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .about{
+        padding: 0 5%;
+    }
+  
+    .contact{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 768px){
+    .my-photo figure img{
+        width: 250px;
+    }
+    .accueil  div{
+        margin: 0 40px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto 50px auto;
+    }
+    .contact{
+        width: 65%;
+        padding: 1% 0;
+    }
+    .contact div img{
+        width: 40px;
+    }
+    footer{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 650px){
+    .accueil{
+        flex-direction: column-reverse;
+    }
+    .accueil .my-name{
+        margin-top: 20px;
+    }
+    .projet .description-projet {
+        line-height: 22px;
+    }
+    .projet .description-projet h3{
+        font-size: 18px;
+    }
+    .projet .description-projet p{
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 18px;
+    }
+    .contact{
+        width: 80%;
+        
+    }
+    .contact div img{
+        width: 40px;
+    }
+    footer{
+        font-size: 16px;
+    }
+   
+}
+@media screen and (max-width: 550px) {
+    .contact{
+        width: 85%;
+        
+    }
+    footer{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 520px){
+    .contact{
+        width: 90%;
+        
+    }
+    .contact div img{
+        width: 35px;
+    }
+    .contact div{
+        margin-top: 10px;
+    }
+
+   
+}
+@media screen and (max-width: 450px){
+    .my-photo figure img{
+        width: 200px;
+    }
+    .navbar.active{
+        height: 250px;
+    }
+    .navbar ul {
+        margin: 80px auto 10px auto;
+    }
+    .contact{
+        width: 90%;
+        
+    }
+    .contact div img{
+        width: 30px;
+    }
+    .contact div{
+        margin-top: 10px;
+    }
+    .contact div{
+        flex-direction: column;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .my-photo img{
+        width: 150px !important;
+    }
+    .navbar.active{
+        height: 250px;
+    }
+    .navbar ul {
+        margin: 80px auto 10px auto;
+    }
+}
+@media screen and (max-width: 200px) {
+    .hamburger .line{
+        width: 20px;
+    }
+    .logo h2{
+        font-size: 20px;
+    }
+}

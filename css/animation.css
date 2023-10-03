@@ -1,0 +1,30 @@
+.my-photo{
+    animation: floatImage 2s ease-in-out infinite;
+    animation-delay: 2s;
+}
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-22px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.my-name{
+    animation: floatText 2s ease-in-out infinite;
+    animation-delay: 2s;
+}
+@keyframes floatText{
+    0%{
+        transform: translateY(-22px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-22px);
+    }
+}
